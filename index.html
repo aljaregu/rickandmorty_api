@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title-page">RICKandMORTY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo" src="./img/Portada_RickyMorty.jpg" alt="">
+            <img class="logo2" src="./img/rick.jpg" alt="">
+            <div class="filter-container">
+                <div>
+                    <label class="filter-label" for="status-filter">Filtrar por estado:</label>
+                    <select id="status-filter">
+                        <option value="alive">Vivos</option>
+                        <option value="dead">Muertos</option>
+                        <option value="unknown">Desconocidos</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" id="name-filter" placeholder="Buscar por nombre">
+                    <button id="name-filter-btn">Buscar</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="characters-container"></div>
+    <script src="index.js"></script>
+</body>
+</html>
